@@ -45,10 +45,10 @@ int main(int argc, char* argv[]) {
 
     const Value& buku = Akar["Daftar_isi"]; // array of characters
     for (int i = 0; i < buku.size(); i++){
-    cout << "   Buku    : " << buku[i]["Buku"].asUInt()<< endl;
-    cout << "   Nama    : " << buku[i]["nama"].asString()<< endl;
-    cout << "   Tahun   : " << buku[i]["tahun"].asString()<< endl;
-    cout << endl;
+        cout << "   Buku    : " << buku[i]["Buku"].asUInt()<< endl;
+        cout << "   Nama    : " << buku[i]["nama"].asString()<< endl;
+        cout << "   Tahun   : " << buku[i]["tahun"].asString()<< endl;
+        cout << endl;
     }
 
     std::cout << "Patch Data: " << std::endl;
