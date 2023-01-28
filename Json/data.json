@@ -1,0 +1,11 @@
+{
+    "Kopi Careh":1,
+    "Daftar_isi":
+    [
+    
+        {"Buku":1, "nama":"Kopi Careh", "tahun": 1996 },
+        {"Buku":2, "nama":"Tangkal Kopi", "tahun": 1995 },
+        {"Buku":3, "nama":"Semangat Kopi", "tahun": 1999},
+	{"Buku":4, "nama":"Slow Kopi", "tahun": 2010},
+    ]
+}
