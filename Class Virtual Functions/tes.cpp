@@ -19,3 +19,21 @@ int main() {
 	return 0;
 }// end of main
 
+// -------------------------------------
+class abstract {
+	public:
+		virtual void pure_v_func() = 0;
+};
+class derived: public abstract {
+	public:
+		void pure_v_func();
+};
+void derived::pure_v_func() {
+	cout << "See how this works";
+}
+int main ()  {
+	derived myclass;
+	myclass.pure_v_func();
+
+	return 0;
+}
