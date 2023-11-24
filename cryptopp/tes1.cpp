@@ -1,19 +1,21 @@
-// stdafx.h : include file for standard system include files,
-// or project specific include files that are used frequently, but
-// are changed infrequently
+
+
+// stdafx.h : menyertakan file untuk sistem standar termasuk file,
+// atau proyek tertentu menyertakan file yang sering digunakan, namun
+// jarang diubah
 //
 
 #pragma once
 
 #pragma once
 
-// The following macros define the minimum required platform.  The minimum required platform
-// is the earliest version of Windows, Internet Explorer etc. that has the necessary features to run
-// your application.  The macros work by enabling all features available on platform versions up to and
-// including the version specified.
+// Makro berikut menentukan platform minimum yang diperlukan. Platform minimum yang diperlukan
+// adalah versi paling awal dari Windows, Internet Explorer, dll. yang memiliki fitur yang diperlukan untuk dijalankan
+// aplikasi Anda. Makro bekerja dengan mengaktifkan semua fitur yang tersedia pada versi platform hingga dan
+// termasuk versi yang ditentukan.
 
-// Modify the following defines if you have to target a platform prior to the ones specified below.
-// Refer to MSDN for the latest info on corresponding values for different platforms.
+// Ubah definisi berikut jika Anda harus menargetkan platform sebelum yang ditentukan di bawah.
+// Lihat MSDN untuk info terbaru tentang nilai yang sesuai untuk platform berbeda.
 #ifndef _WIN32_WINNT            // Specifies that the minimum required platform is Windows Vista.
 #define _WIN32_WINNT 0x0500     // Change this to the appropriate value to target other versions of Windows.
 #endif
@@ -194,13 +196,13 @@ int main(int argc, char* argv[])
             new StringSink( rpdata )
         ); // AuthenticatedDecryptionFilter
 
-        // The StringSource dtor will be called immediately
-        //  after construction below. This will cause the
-        //  destruction of objects it owns. To stop the
-        //  behavior so we can get the decoding result from
-        //  the DecryptionFilter, we must use a redirector
-        //  or manually Put(...) into the filter without
-        //  using a StringSource.
+        // Dtor StringSource akan segera dipanggil
+        // setelah konstruksi di bawah. Hal ini akan menyebabkan
+        // penghancuran benda yang dimilikinya. Untuk menghentikan
+        // perilaku sehingga kita bisa mendapatkan hasil decodingnya
+        // DecryptionFilter, kita harus menggunakan redirector
+        // atau secara manual Masukkan(...) ke dalam filter tanpa
+        // menggunakan StringSource.
         StringSource( cipher, true,
             new Redirector( df /*, PASS_EVERYTHING */ )
         ); // StringSource
