@@ -1,3 +1,9 @@
+/* ----------
+-lsfml-main
+-lsfml-graphics
+-lsfml-system
+-lsfml-window
+*/
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
 #include <iostream>
