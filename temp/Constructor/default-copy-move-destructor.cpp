@@ -26,11 +26,7 @@ public:
     }
     // Destructor
     ~Person() {
-        if (name.empty() && age) { // Check if name, age is not nullptr (i.e., not moved-from)
-            std::cout << "Person Destructor. Deallocating " << name << age << std::endl;
-        } else {
-            std::cout << "Person Destructor. (No data to deallocate, was moved-from or empty) " << std::endl;
-        }
+        std::cout << "All data Person Destroy. Deallocating " << std::endl;
     }
 };
 
